@@ -1,0 +1,142 @@
+
+.wapper{
+
+
+width: 100%;
+    background-color: rgb(223, 223, 223);
+}
+.header_conteiner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    background: rgb(223, 223, 223);
+}
+h1{
+    margin: 10px;
+}
+.lesson{
+    height: 115px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 4px 6px 25px #b3b3b3;
+    border: 1px solid #b3b3b3 ;
+    border-radius: 15px;
+}
+.lesson:hover{
+    box-shadow: none;
+    background: rgb(223, 223, 223);
+}
+.lesson_inner{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    border-top: 1px solid grey;
+    margin-top: 30px;
+    
+}
+.inner_link{
+width: 96px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid rgb(31, 149, 192) ;
+border-radius: 5px;
+}
+.inner_link:hover{
+    box-shadow: 2px 2px 4px rgb(146, 146, 146);
+}
+.lesson_card{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.lesson_head{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.conteiner{
+    border-radius: 15px;
+    background:rgba(166, 225, 248, 0.178);
+    max-width: 1120px;
+    max-height: 1208px;
+
+}
+.conteiner:hover{
+    background-color: white;
+}
+.info_top{
+display: flex;
+flex-wrap: wrap;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.title_1{
+    padding: 20px;
+}
+.lesson{
+    background-color: white;
+}
+.info_2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.conteiner{
+    margin: 0px 0px 20px;
+}
+
+input{
+height: 0;
+}
+input::before{
+    content: "";
+    position: fixed;
+    background:url(/vader.png) center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    top: 40px;
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    z-index: 100;
+} 
+input:checked + .wapper {
+    background-color: black;
+    color: white;
+}
+input:checked + .wapper .header{
+    background-color: black;
+}
+input:checked + .wapper .lesson{
+    color: rgb(255, 255, 255);
+    background-color:black
+}
+input:checked + .wapper .conteiner:hover{
+    color: blanchedalmond;
+    background-color: rgb(12, 12, 31);
+}
+input:checked +.wapper .inner_link{
+   background-color: white;
+}
